@@ -18,11 +18,11 @@ React-based Google Books Search app. This SPA (Single Page Application) uses [`r
 
 # How to use
 
-Users of the app can search for books by keyword(s) with an option to filter their search by author name. 
+Users of the app can search for books by title . 
 
-Once books are rendered to the page, clicking the *Save* button will add them to the Favorites page, notifying the user.
+Once books are rendered to the page, clicking the *Save* button will add them to the Library page, notifying the user.
 
-On the Favorites page, clicking *Remove* for a book will remove it from this page as well as the Mongo database.
+On the Library page, clicking *Remove* for a book will remove it from this page as well as the Mongo database.
 
 ### Live site
 

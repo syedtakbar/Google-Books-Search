@@ -60,6 +60,7 @@ class Search extends Component {
 
   notify = () => {
     API.notifyUser(() => {
+      console.log("inside notifyUser setting status");
       this.setState({ updateBook: true });
     });
     setTimeout(this.removeNotification, 3000);

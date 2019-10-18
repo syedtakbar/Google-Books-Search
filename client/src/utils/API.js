@@ -1,5 +1,5 @@
 import openSocket from "socket.io-client";
-const socket = openSocket("https://sta-google-books-search.herokuapp.com/");
+const socket = openSocket("");
 require("dotenv").config();
 const axios = require("axios");
 
@@ -19,7 +19,11 @@ export default {
     return axios.delete("/api/books/" + id);
   },
   notifyUser: function(cb) {
-    socket.on("timer", timestamp => cb(null, timestamp));
+    console.log("notifyUser api");
+    socket.on("timer", timestamp => {
+      console.log("notifyUser socket on event");
+      cb(null, timestamp);
+    });
     socket.emit("notifyUser", 100);
   },
 };
