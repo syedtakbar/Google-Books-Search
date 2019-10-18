@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Grid, Cell } from 'react-foundation';
+import { Grid, Cell, Colors } from 'react-foundation';
 import { Link } from 'react-router-dom';
 import Header from '../components/Header';
 import Card from '../components/Card';
@@ -50,6 +50,7 @@ class Saved extends Component {
                                     description={book.description}
                                     link={book.link}
                                     btnType={"Remove"}
+                                    btnColor={Colors.ALERT}
                                     handler={() => this.deleteBook(book._id)}>
                                     </Card>
                                 </Cell>

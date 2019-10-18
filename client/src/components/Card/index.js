@@ -9,6 +9,7 @@ export default function Card({
     description,
     link,
     btnType,
+    btnColor,
     handler,
     id
 }) {
@@ -24,7 +25,7 @@ export default function Card({
                         <p><span className="book-label">Author(s): </span>{authors}</p>
                         <p><span className="book-label">Synopsis: </span>{description}</p>
                         <a href={link} target="_blank" rel="noopener noreferrer">{"View on Google Books"}</a> <br/>
-                        <Button className="button-action" size={Sizes.SMALL} onClick={handler} id={id}>{btnType}</Button>
+                        <Button className="button-action" color={btnColor} size={Sizes.SMALL} onClick={handler} id={id}>{btnType}</Button>
                     </div>
                 </Cell>
             </Grid>

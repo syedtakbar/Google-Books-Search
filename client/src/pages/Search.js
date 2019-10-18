@@ -3,7 +3,7 @@ import Header from "../components/Header";
 import SearchBar from "../components/SearchBar";
 import SubmitBtn from "../components/SubmitBtn";
 import Card from "../components/Card";
-import { Grid, Cell } from "react-foundation";
+import { Grid, Cell, Colors } from "react-foundation";
 import { Link } from "react-router-dom";
 import Button from "../components/Link";
 import Alert from "../components/Alert";
@@ -129,6 +129,7 @@ class Search extends Component {
                       description={result.description}
                       link={result.link}
                       btnType="Save"
+                      btnColor={Colors.SUCCESS}
                       handler={() => this.saveBookToDB(result)}
                     />
                   </Cell>
