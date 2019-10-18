@@ -1,0 +1,12 @@
+.notification {
+    position: fixed;
+    width: 80%;
+    z-index: 1;
+    opacity: .8;
+    background-color: #bbb496;
+    color: #0a0a0a;
+    border: solid .05rem #516959;
+    padding: .6rem;
+    border-radius: 12px;
+}
+

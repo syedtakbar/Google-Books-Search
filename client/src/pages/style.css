@@ -1,0 +1,21 @@
+.sub-title {
+    margin: 1rem 2rem 0 2rem;
+    font-family: 'Lora', serif;
+}
+
+.search-container {
+    margin: 1 auto 8rem auto;
+    width: 80%;
+}
+
+.display {
+    width: 85%;
+    margin: 1rem auto 0 auto;
+    padding: 2rem auto 0 auto;
+}
+
+.display2 {
+    width: 95%;
+    margin: 1rem auto 0 auto;
+    padding: 2rem auto 0 auto;
+}
