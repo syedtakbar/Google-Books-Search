@@ -91,14 +91,12 @@ class Search extends Component {
                         : "Book title Required"
                     }
                 />
-  
                 <SubmitBtn label="Search" onClick={this.handleSubmit} />
-
-            
-              
             </form>
           </Grid>
-          {this.state.updateBook ? (
+
+          {            
+            this.state.updateBook ? (            
             <Alert
               heading="Book saved"
               message={`"${this.state.savedBookTitle}" has been added to your library.`}

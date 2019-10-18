@@ -11,7 +11,7 @@ const io = require("socket.io").listen(server);
 const PORT = process.env.PORT || 3005;
 
 io.on("connection", client => {
-  client.on("notify", () => {
+  client.on("notifyUser", () => {
     console.log("persist book...");
     client.emit("timer", new Date());
   });
