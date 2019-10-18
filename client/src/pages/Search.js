@@ -113,7 +113,7 @@ class Search extends Component {
                   : "Author unavailable.",
                 image: book.volumeInfo.imageLinks
                   ? book.volumeInfo.imageLinks.thumbnail
-                  : "../images/default.png",
+                  : "../images/no_cover_thumb.gif",
                 description: book.searchInfo
                   ? book.searchInfo.textSnippet
                   : "No description available.",

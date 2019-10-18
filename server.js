@@ -12,7 +12,7 @@ const PORT = process.env.PORT || 3005;
 
 io.on("connection", client => {
   client.on("notifyUser", () => {
-    console.log("persist book...");
+    console.log("saving the book to mongo...");
     client.emit("timer", new Date());
   });
 });

@@ -1,5 +1,5 @@
 import openSocket from "socket.io-client";
-const socket = openSocket("");
+const socket = openSocket("/");
 require("dotenv").config();
 const axios = require("axios");
 
