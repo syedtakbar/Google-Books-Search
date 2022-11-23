@@ -25,7 +25,7 @@
     "if-env": "^1.0.4",
     "mongoose": "^5.5.5",
     "path": "^0.12.7",
-    "socket.io": "^2.2.0",
+    "socket.io": "^2.5.0",
     "webpack-cli": "^3.3.2"
   }
 }
